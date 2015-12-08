@@ -5,7 +5,9 @@
 # versions of Debian images are downloaded.
 FROM debian:wheezy
 MAINTAINER qida <sunqida@foxmail.com>
-RUN apt-get -y install wget
+RUN     apt-get -y update && \
+        apt-get -y install openjdk-7-jre-headless wget
+
 
 # Create mount point, and mark it as holding externally mounted volume
 VOLUME /home/www
