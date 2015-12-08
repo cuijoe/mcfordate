@@ -16,4 +16,4 @@ VOLUME /home/www
 RUN wget http://shanlin-10010625.file.myqcloud.com/mc.zip
 RUN unzip mc.zip
 EXPOSE 25565
-CMD  java -jar ./mc/mc.jar
+CMD  java -Xmx512M -Xms512M -jar mc/mc.jar
