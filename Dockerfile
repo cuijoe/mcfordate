@@ -5,6 +5,7 @@
 # versions of Debian images are downloaded.
 FROM debian:wheezy
 MAINTAINER qida <sunqida@foxmail.com>
+ENV     TZ "PRC"
 RUN     apt-get -y update && \
         apt-get -y install openjdk-7-jre-headless wget unzip
 
