@@ -6,7 +6,7 @@
 FROM debian:wheezy
 MAINTAINER qida <sunqida@foxmail.com>
 RUN     apt-get -y update && \
-        apt-get -y install openjdk-7-jre-headless wget
+        apt-get -y install openjdk-7-jre-headless wget unzip
 
 
 # Create mount point, and mark it as holding externally mounted volume
